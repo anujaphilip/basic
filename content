@@ -1,0 +1,5 @@
+for newfile in ` ls data `
+do
+echo "Display the content"
+cat data/${newfile}
+done

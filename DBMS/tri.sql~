@@ -1,0 +1,12 @@
+ create or replace trigger pri_his_trigger
+  before update of unit_price
+  on product
+  for each row
+  begin
+  insert into pro_pri_his
+  values(:old.pro_id,
+         :old.pro_name,
+         :old.su_name,
+         :old.unit_price);
+  end;
+

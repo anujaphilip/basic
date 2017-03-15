@@ -1,0 +1,15 @@
+
+ create or replace trigger emp_update
+ before update on employe
+ for each row
+ begin
+ if updating then
+ raise_application_error(-20225,'cannot be updated');
+ end if;
+ end;
+ /
+
+Trigger created.
+
+
+

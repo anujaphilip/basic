@@ -1,0 +1,4 @@
+if sed '/u/d' $1 $2
+then
+echo "successfully deleted"
+fi

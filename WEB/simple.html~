@@ -1,0 +1,52 @@
+<html>
+    <head>
+	<title>Simple Interest and Compound Interest Calculation</title>
+
+        <script>
+            function simple()
+            {
+                p1 = document.getElementById("p1").value;
+                n1 = document.getElementById("n1").value;
+                r1 = document.getElementById("r1").value;
+                result1 = document.getElementById("result1");
+                
+                result1.innerHTML = "The interest is " + (p1*n1*r1/100);
+            }
+            function compound()
+            {
+                p = document.getElementById("p").value;
+                n = document.getElementById("n").value; 
+            
+                r = document.getElementById("r").value;
+                result = document.getElementById("result");
+
+               
+                A = (p* Math.pow((1 + (r/(n*100))), (n)));
+                result.innerHTML = "The total amount is " + A.toFixed(2);
+                result.innerHTML += "<br> The interest is " + (A.toFixed(2) - p).toFixed(2);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Simple Interest Calculation</h1>
+
+        Amount: <input id="p1"><br/>
+        Rate: <input id="r1"><br/>
+        No. of Years: <input id="n1"><br/>
+        <button onclick="simple()">Calculate</button>
+        <p id="result1"></p>
+
+       <h1>Compound Interest Calculation</h1>
+        <div> <label>Amount: </label> <input id="p"> </div>
+        <div> <label>Rate (%): </label> <input id="r"> </div>
+    
+        <div> <label>Years: </label> <input id="n" value="1"> </div>
+         <button onclick="compound()">Calculate</button>
+<input type="reset" value="clear">
+
+
+        <p id="result"></p>
+    </body>
+</html>
+

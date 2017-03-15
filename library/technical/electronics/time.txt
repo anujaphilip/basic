@@ -1,0 +1,15 @@
+              do not ignore entries starting with .
+              do not list implied . and ..
+              do not list implied entries ending with ~
+              list directory entries instead of contents, and do not dereference symbolic links
+       -f     do not sort, enable -aU, disable -ls --color
+              likewise, except do not append `*'
+       -g     like -l, but do not list owner
+              in a long listing, don't print group names
+              do not list implied entries matching shell PATTERN (overridden by -a or -A)
+              do not list implied entries matching shell PATTERN
+              print raw entry names (don't treat e.g. control characters specially)
+       -o     like -l, but do not list group information
+              enclose entry names in double quotes
+       -U     do not sort; list entries in directory order
+       The full documentation for ls is maintained as a Texinfo manual.  If the info and ls programs are properly installed at your site, the com‐

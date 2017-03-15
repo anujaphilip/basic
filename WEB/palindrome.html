@@ -1,0 +1,91 @@
+<!doctype html>
+<head>Manipulating Functions
+<script>
+ function palindrome()
+   {
+    var temp,rev=0
+    var no=prompt("Enter a number");
+    temp=no
+    while(no>0)
+      {
+        rev=(rev*10)+(no%10)
+        no=Math.floor(no/10)
+      }  
+     if(rev==temp)
+       document.write(temp +" Is Palindrome")
+     else
+     document.write
+(temp + " Is Not Palindrome")
+     
+
+   }
+function amstrong()
+{
+var b,z,c=0;
+var a=prompt("Enter a number");
+z=a;
+while(z>0)
+{
+b=z%10;
+c=c+(b*b*b);
+z=parseInt(z/10);
+}
+if(a==c)
+document.write(c +" is amstrong number");
+else
+document.write(c + "is not an amstrong number");
+}
+function f()
+{
+ var a,b,c,n;
+ n=parseInt(prompt("Enter Number"));
+ a=0;
+ b=1;
+ document.write(a);
+ document.write(b);
+ for(i=3; i<=n; i++)
+ {
+   c=(a+b);
+   document.write(c+" ");
+   a=b;
+   b=c;
+ }
+}
+function prime()
+{
+  var n,i;
+  n=parseInt(prompt("Enter a number"));
+  i=2;
+  while(i<n)
+  {
+   
+    if(n%i==0)
+    document.write(i + "is not prime number");
+    else
+    i++;
+  }
+  document.write(i + " is prime number");
+}
+function factorial()
+{
+  var m=1;
+  n=parseInt(prompt("Enter a number"));
+  while(n)
+  {
+    m=m*n;
+    n--;
+  }
+  document.write("Factorial of a given no is:"+" "+m);
+}
+</script>
+</head>
+<body>
+<form name=frm>
+<input type=button value='Is Palindrome' onclick="palindrome();">
+<input type=button value='Is Amstrong' onclick="amstrong();">
+<input type=button value='Is Fibonacci' onclick="f();">
+<input type=button value='Is Prime' onclick="prime();">
+<input type=button value='Factorial' onclick="factorial();">
+</form>
+</body>
+</html>

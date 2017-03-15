@@ -1,0 +1,5 @@
+empname      age    salary     empid    education    designation   address    gender
+anu          23     100000     1        mca          manager       ernakulam  female
+manu         25     25000      2        btec         production    pune       male
+anna         27     10000      3        bca          sales         chalakkudy female
+ann          25     15000      4        bsc          sales         pune       female

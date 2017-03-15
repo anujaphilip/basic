@@ -1,0 +1,9 @@
+echo "Enter the first no"
+read a
+echo "Enter the second no"
+read b
+if [ $a -ge $b ]
+then
+echo $a is greater
+echo $b is greater
+fi

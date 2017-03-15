@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+<script>
+ function palindrome()
+   {
+    var temp,rev=0
+    var no=prompt("Enter a number");
+    temp=no
+    while(no>0)
+      {
+        rev=(rev*10)+(no%10)
+        no=Math.floor(no/10)
+      }  
+     if(rev==temp)
+       alert(temp +" Is Palindrome")
+     else
+     alert(temp + " Is Not Palindrome")
+     
+
+   }
+function amstrong()
+{
+var b,z,c=0;
+var a=prompt("Enter a number");
+z=a;
+while(z>0)
+{
+b=z%10;
+c=c+(b*b*b);
+z=parseInt(z/10);
+}
+if(a==c)
+alert("given no is amstrong number");
+else
+alert("given no is not an amstrong number");
+}
+function f()
+{
+ var a,b,c,n;
+ n=parseInt(prompt("Enter Number"));
+ a=0;
+ b=1;
+ document.write(a);
+ document.write(b);
+ for(i=3; i<=n; i++)
+ {
+   c=(a+b);
+   document.write(c);
+   a=b;
+   b=c;
+ }
+}
+ </script>
+</head>
+<body>
+<form name=frm>
+<input type=button value='Is Palindrome' onclick="palindrome();">
+<input type=button value='Is Amstrong' onclick="amstrong();">
+<input type=button value='Is Fibonacci' onclick="f();">
+</form>
+</body>
+</html>

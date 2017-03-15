@@ -1,0 +1,41 @@
+<!-------- Quiz Starts Here -------->
+<h3>My Quiz</h3>
+
+<form action="http://www.quizbox.com/builder/result.aspx?max=50&q=5" method="post">
+<input type="hidden" name="QuizTitle" value="My Quiz" />
+<input type="hidden" name="QuizReturnLink" value="http://www.quizbox.com/builder/" />
+<ol>
+<li>To which of the following dynasties did King Bhoja, a great patron of literature and art, belong?</li><br />
+<input type="radio" name="ans1" value="0"/>Karkota<br />
+<input type="radio" name="ans1" value="0"/>Utpala<br />
+<input type="radio" name="ans1" value="10"/>Paramara<br />
+<input type="radio" name="ans1" value="0"/>Gurjara Pratihara<br /><br />
+
+<li>      Two of the great Mughals wrote their own memories. There were</li><br />
+<input type="radio" name="ans2" value="0"/>Babar and Humayun <br />
+<input type="radio" name="ans2" value="0"/> Humayun and Jahangir<br />
+<input type="radio" name="ans2" value="10"/>Babar and Jahangir<br />
+<input type="radio" name="ans2" value="0"/> Jahangir and Shahjahan<br /><br />
+
+<li>To which king belongs the Lion capital at Sarnath?</li><br />
+<input type="radio" name="ans3" value="0"/>  Chandragupta<br />
+<input type="radio" name="ans3" value="10"/> Ashoka <br />
+<input type="radio" name="ans3" value="0"/> Kanishka<br />
+<input type="radio" name="ans3" value="0"/> Harsha<br /><br />
+
+<li>  Velu Thampi led a revolt against the British in state of ?</li><br />
+<input type="radio" name="ans4" value="10"/> Travancore  <br />
+<input type="radio" name="ans4" value="0"/> Baroda<br />
+<input type="radio" name="ans4" value="0"/> Hyderabad<br />
+<input type="radio" name="ans4" value="0"/> Mysore<br /><br />
+
+<li>The term 'Yavanapriya' mentioned in ancient Sanskrit texts denoted  ?</li><br />
+<input type="radio" name="ans5" value="0"/>ivory <br />
+<input type="radio" name="ans5" value="10"/>pepper<br />
+<input type="radio" name="ans5" value="0"/> a fine variety of Indian muslin<br />
+<input type="radio" name="ans5" value="0"/>damsels sent to the Greek court for dance<br /><br />
+</ol>
+
+<p><input type="submit" value="Grade Me" onclick="this.value='Please wait...'" /></p>
+</form>
+<!-------- Quiz Ends Here -------->

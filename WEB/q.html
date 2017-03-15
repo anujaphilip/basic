@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Quiz</title>
+<style>
+body 
+{
+    background-color: lightblue;
+    font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("code.jpg");
+color: white;
+}
+</style>
+
+
+</head>
+<body>
+<div id="main">
+<div id="header">
+<h1>JavaScript Quiz</h1>
+</div>
+
+
+<form  id="form1" action=" ">
+<p>Which is the best description of a variable?</p>
+<input type="radio" name="variable" value="0" />Identifies a portion of a string.<br />
+<input type="radio" name="variable" value="0" />A method to join strings.<br />
+<input type="radio" name="variable" value="25" />Allows you to store information so it can be reused throughout the program<br />
+<input type="radio" name="variable" value="0" />Allows you to make a decision based on a condition.<br />
+
+<p>Which is the best description of the substring method?</p>
+<input type="radio" name="sub" value="25" />Identifies a portion of a string.<br />
+<input type="radio" name="sub" value="0" />A method to join strings.<br />
+<input type="radio" name="sub" value="0" />Allows you to store information so it can be reused throughout the program<br />
+<input type="radio" name="sub" value="0" />Allows you to make a decision based on a condition.<br />
+
+<p>Which is the best description of concatenation?</p>
+<input type="radio" name="con" value="0" />Identifies a portion of a string.<br />
+<input type="radio" name="con" value="25" />A method to join strings.<br />
+<input type="radio" name="con" value="0" />Allows you to store information so it can be reused throughout the program<br />
+<input type="radio" name="con" value="0" />Allows you to make a decision based on a condition.<br />
+
+<!-- This demonstrates the use of a dropdown instead of using radio buttons. You can decide which you want to use. Be consistent and consider how a user will best interact with the element. -->
+
+<p>Which is the best description of an if statement?</p>
+<select id="ifstate">
+  <option value="0">Choose One</option>
+  <option value="0">Identifies a portion of a string.</option>
+  <option value="0">A method to join strings.</option>
+  <option value="0">Allows you to store information so it can be reused throughout the program</option>
+  <option value="25">Allows you to make a decision based on a condition.</option>
+</select>
+
+<br />
+<input type="submit" value="Submit">
+</form>
+
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+
+
+<script>
+document.getElementById("form1").onsubmit=function()
+ {
+           variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   
+	   ifstate = parseInt(document.getElementById("ifstate").value);
+	   
+	   
+	   result = variable + sub + con + ifstate;
+	   
+	document.getElementById("grade").innerHTML = result;
+	
+	/* This is the area we replaced with the JSON and loop
+	if (result == 0) {result2 = "I don't think you studied.<br /><img src='0.jpg' width='300' />"};
+    if (result == 25) {result2 = "You need to spend more time. Try again.<br /><img src='25.jpg' width='300' />"};
+    if (result == 50) {result2 = "I think you could do better. Try again.<br /><img src='50.jpg' width='300' />"};
+    if (result == 75) {result2 = "So close. Try again.<br /><img src='75.jpg' width='300' />"};
+    if (result == 100) {result2 = "You're a JavaScript pro!<br /><img src='100.jpg' width='300' />"};
+    */
+     grading = [
+	   {score:0,feedback:"I don't think you studied", image: "0.jpg"},
+	   {score:25,feedback:"You need to spend more time. Try again", image: "25.jpg"},
+	   {score:50,feedback:"I think you could do better. Try again.", image: "50.jpg"},
+           
+	   ];
+	  
+	  for(i=0; i<grading.length; i++) {
+	  if(result == grading[i].score) {
+	  result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+	  }
+	  }
+    
+    document.getElementById("grade2").innerHTML = result2; 
+	   
+
+
+return false; 
+} 
+
+</script>
+</body>
+</html>
+

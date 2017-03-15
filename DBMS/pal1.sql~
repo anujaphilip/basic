@@ -1,0 +1,11 @@
+declare
+x varchar(20);
+y varchar(20);
+t varchar(10);
+begin
+t:='&t';
+y:=palin(t);
+dbms_output.put_line(y);
+end;
+
+

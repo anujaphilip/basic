@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="img.jpeg" width="145" height="126" alt="Planets" usemap="#planetmap">
+<script>
+function bigImg(x)
+{
+  x.style.height="64px";
+  x.style.width="64px";
+}
+function normalImg(x)
+{
+   x.style.height="32px";
+   x.style.width="32px";
+}
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.gif">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venglobe.gif">
+</map>
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<body>
+<?php
+function splitter($str)
+{
+  $freq=array();
+  $words=preg_split("/[.,;:!?]\s*/",$str);
+  foreach($words as $word)
+  {
+    $keys=array_keys($freq);
+    if(in_array($word,$keys))
+    $freq[$word]++;
+    else
+    $freq[$word]=1;
+  }
+  return $freq;
+}
+$str="apples.are.good.for.you.or.dont.you.like.apples?or.maybe.you.like.orange.better.than.apples";
+$tb1=splitter($str);
+$sorted_keys=array_keys($tb1);
+sort($sorted_keys);
+foreach($sorted_keys as $word)
+{
+ print"$word $tb1[$word]<br/>";
+}
+?>
+</body>
+</html>

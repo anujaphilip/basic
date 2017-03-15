@@ -1,0 +1,7 @@
+echo "Enter source and target filenames"
+read source 
+read target
+if cp $source $target
+then
+echo "file copies successfully"
+fi

@@ -1,0 +1,11 @@
+declare
+a number(3);
+b number(3);
+c number;
+begin
+a:=3;
+b:=5;
+c:=a+b;
+dbms_output.put_line(c);
+end;
+/

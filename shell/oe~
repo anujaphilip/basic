@@ -1,0 +1,9 @@
+echo "Enter a number"
+read a
+(( s=$a % 2 ))
+if [ s -eq 0 ]
+then 
+echo "even"
+else
+echo "odd"
+fi

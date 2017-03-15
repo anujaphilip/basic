@@ -1,0 +1,18 @@
+ create or replace trigger pree_update
+
+   before update on employe
+
+  for each row
+
+  begin
+
+  if to_char(sysdate,'day')in('saturday','sunday')then
+
+ raise_application_error(-2025,'cannot be updated');
+
+  end if;
+
+  end;
+
+Trigger created.
+

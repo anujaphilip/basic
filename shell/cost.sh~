@@ -1,0 +1,13 @@
+echo "selling price"
+read sp
+echo "cost price"
+read cp
+if [ $cp -gt $sp ]
+then
+(( p=$cp - $sp ))
+echo "Profit amt:$p"
+else
+(( p=$sp - $cp ))
+echo "Loss Amt:$p"
+fi
+

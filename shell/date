@@ -1,0 +1,2 @@
+read date
+echo "The date is $(date)"

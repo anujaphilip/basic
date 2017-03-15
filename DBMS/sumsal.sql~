@@ -1,0 +1,25 @@
+     create or replace function sumsal(departid number) 
+    return number is
+    sumsalary integer;
+    begin
+    select sum(salary) into sumsalary from employee
+    where employee.depart_id=departid;
+    return sumsalary;
+    end;  2    3    4    5    6    7    8  
+  9  /
+
+Function created.
+
+SQL> declare
+   sumsalary integer(10);
+   begin
+   sumsalary:=sumsal(10);
+   dbms_output.put_line(sumsalary);
+   end;  2    3    4    5    6  
+  7  /
+1260
+
+PL/SQL procedure successfully completed.
+
+Commit complete.
+

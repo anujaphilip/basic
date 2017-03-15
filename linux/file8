@@ -1,0 +1,91 @@
+a  aaa.c  bin  cat  ddd  file1  file2  file3  file6  foo  mydir  newdir
+
+./a:
+b
+
+./a/b:
+c
+
+./a/b/c:
+
+./bin:
+foo
+
+./bin/foo:
+
+./ddd:
+aaa.c
+
+./mydir:
+file4  file6  newdir
+
+./mydir/newdir:
+
+./newdir:
+file4  file6  newdir
+
+haiiiiiiii friends
+ada  aaa.c  bin  cat  ddd  file1  file2  file3  file6  foo  mydir  newdir
+
+./a:
+b
+
+./a/b:
+c
+
+./a/b/c:
+
+./bin:
+foo
+
+./bin/foo:
+
+./ddd:
+aaa.c
+
+./mydir:
+file4  file6  newdir
+
+./mydir/newdir:
+
+./newdir:
+file4  fil
+./a:
+b
+
+./a/b:
+c
+
+./a/b/c:
+
+./bin:
+foo
+
+./bin/foo:
+
+./ddd:
+aaa.c
+
+./mydir:
+file4  file6  newdir
+
+./mydir/newdir:
+
+./newdir:
+file4  fil
+./a:
+b
+
+./a/b:
+c
+
+./a/b/c:
+
+./bin:
+foo
+
+./bin/foo:
+
+./ddd:
+aaa.c
+

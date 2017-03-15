@@ -1,0 +1,90 @@
+﻿	
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>eat</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body bgcolor="pink">
+
+
+<div id="header">
+<h1><i><a href="index.html"><center><img src="images/logo.jpg"/ width="500" hight="100"></a></center></i></h1>
+</div>
+
+<div id="menu">
+<center><b><h2>
+<ul>
+  <li class='active'><a href='eat.html'>EAT</a></li>
+  <li><a href='move.html'>MOVE</a></li>
+  <li><a href='live.html'>LIVE</a></li>
+</ul>
+</h2></b></center>
+</div>
+
+<div id="content">
+<h1><b><center><font color="blue">Eat </font></center></b></h1>
+<div class="article">
+<p><i> <h3>Whether you need a quick and healthy dinner recipe, want to learn how to make the world's best hummus, or you just want to know what all of your vegan, gluten-free, 
+and/or kale-obsessed friends are always talking about, we’ve got you covered! This is the place where all of our food and nutrition content comes together.
+ You’ll find awesome recipes, healthy ingredient swaps, fresh ideas for how to flavor go-to healthy foods like chicken breast, quinoa, and tofu,
+ and so much more—including some insanely delicious dessert ideas. Enjoy!</i></h3></p>
+<h1><b><center>Today’s Specials</center></b></h1>
+<h3><center>The healthy meals we're cooking, eating, and dreaming about… right now</center></h3>
+<table>
+<tr>
+
+<td><img src="images/image8.jpg" width="400" height="240">
+    <br><h4><b>7 Game Day Recipes Better Than a Greasy Pile
+    <br> of Wings<b></h4>
+    <br><a href="eat.html">Read More..</a>
+
+<td><img src="images/image9.jpg" width="400" height="240">
+    <br><h4><b>7These 9 Desserts Prove Dairy-Free Is Still
+    <br>  Delicious<b></h4>
+    <br><a href="eat.html">Read More..</a>
+
+<td><img src="images/image10.jpg" width="400" height="240">
+    <br><h4><b>723 Take-Out Favorites You Can Make Way
+    <br>  Healthier at Home<b></h4>
+    <br><a href="eat.html">Read More..</a>
+
+</tr>
+</table>
+<h1><b><center>Food Cures</center></b></h1>
+<h3><center>What to eat (and avoid) to ease crankiness, mid-run crashes, hangovers, and more</center></h3>
+<table>
+<tr>
+
+<td><img src="images/image11.png" width="400" height="240">
+    <br><h4><b>7 21 Healthy and Portable Energy-Boosting 
+    <br> Snacks<b></h4>
+    <br><a href="eat.html">Read More..</a>
+
+<td><img src="images/image12.jpg" width="400" height="240">
+    <br><h4><b>7The Best Meals for Healthy Skin
+    <br>  <b></h4>
+    <br><a href="eat.html">Read More..</a>
+
+<td><img src="images/image13.jpg" width="400" height="240">
+    <br><h4><b>Eating This Can Make You Smarter
+    <br>  <b></h4>
+    <br><a href="eat.html">Read More..</a>
+
+</tr>
+</table>
+</div>
+<div class="article">
+<center><img src="images/image7.jpg" width="300" height="50"></center>
+</div>
+<footer>
+<div id="footer">
+<h4><i><center>healthylifetip@gmail.com</center></i></h4>
+</div>
+</footer>
+</body>
+</html>
+
+
+

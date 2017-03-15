@@ -1,0 +1,6 @@
+echo "Enter name"
+read name
+echo "Enter phone no"
+read phoneno
+echo "$name:$phoneno">>customerdata
+

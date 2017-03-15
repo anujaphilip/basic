@@ -1,0 +1,171 @@
+1.......<HTML>
+<HEAD><title>Palindrome by kbkashid</title>
+<script language='JavaScript'>
+ function chkpalindrome()
+   {
+    var temp,rev=0
+    var no=parseInt(frm.t1.value)
+    temp=no
+    while(no>0)
+      {
+        rev=(rev*10)+(no%10)
+        no=Math.floor(no/10)
+      }  
+     if(rev==temp)
+       alert(temp +" Is Palindrome")
+     else
+     alert(temp + " Is Not Palindrome")
+     
+
+   }
+ </script>
+</HEAD>
+<BODY><form name=frm>
+Enter A Number:<input type=text name=t1 /><input type=button value='Is Palindrome' onclick="chkpalindrome();">
+</form>
+</BODY>
+</HTML>
+
+2........<html>
+<head><TITLE></TITLE>
+<script language="JavaScript">
+var b,z,c=0;
+var a=prompt("Enter a number");
+z=a;
+while(z>0)
+{
+b=z%10;
+c=c+(b*b*b);
+z=parseInt(z/10);
+}
+if(a==c)
+alert("given no is amstrong number");
+else
+alert("given no is not an amstrong number");
+</script>
+</head>
+<body></body>
+</html>
+
+
+<html>
+<head><TITLE></TITLE>
+<script language="JavaScript">
+var b,z,c=0;
+//var a=prompt("Enter a number");
+//z=a;
+for(i=150;i<10000;i++)
+{
+
+z=i;
+c=0;
+while(z>0)
+{
+b=z%10;
+c=c+(b*b*b);
+z=parseInt(z/10);
+}
+if(i==c)
+alert("given no is amstrong number"+i);
+}
+</script>
+</head>
+<body></body>
+</html>
+
+
+3..............    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <meta charset=utf-8 />  
+    <title>Check a number is prime or not</title>  
+    </head>  
+    <body>  
+       
+    </body>  
+    </html>  
+
+JavaScript Code :
+view plaincopy to clipboardprint?
+
+    function test_prime(n)  
+    {  
+      
+      if (n===1)  
+      {  
+        return false;  
+      }  
+      else if(n === 2)  
+      {  
+        return true;  
+      }else  
+      {  
+        for(var x = 2; x < n; x++)  
+        {  
+          if(n % x === 0)  
+          {  
+            return false;  
+          }  
+        }  
+        return true;    
+      }  
+    }  
+
+
+<html>  
+<head><TITLE></TITLE>  
+<script language="JavaScript">  
+var a=prompt("enter a value");  
+alert(a);  
+var c=0;  
+  
+ for(var i=2;i<a;i++)  
+  {  
+   if(a%i==0)  
+   {  
+    c=i;  
+    //alert("Now C IS:"+c);  
+   }  
+  }  
+  if(c==0)  
+  {  
+   alert("given no is prime");  
+  }  
+  else  
+  {  
+   alert("given no is not a prime");  
+  }  
+</script>  
+</head>  
+<body></body>  
+</html>  
+}
+
+
+4..........<html>
+<script language="JavaScript"> 
+function f()
+{
+ var a,b,c,n;
+ n=parseInt(prompt("Enter Number"));
+ a=0;
+ b=1;
+ document.write(a);
+ document.write(b);
+ for(i=3; i<=n; i++)
+ {
+   c=(a+b);
+   document.write(c);
+   a=b;
+   b=c;
+ }
+}
+</script>
+<body>
+<a href="" onClick="f()">fibonacci series</a>
+</body>
+</html>
+
+
+5........
+

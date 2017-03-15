@@ -1,0 +1,10 @@
+echo "Enter the basicpay"
+read bp
+(( hra=$bp\*10/100 )) 
+(( da =$bp\*20/100 ))
+(( gp =$bp+$da+$hra ))
+echo "basicpay : $bp"
+echo "hra      : $hra"
+echo "da       : $da" 
+echo "         ..............
+echo "grosspay :$gp"

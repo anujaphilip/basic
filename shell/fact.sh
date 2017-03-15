@@ -1,0 +1,8 @@
+echo "Enter the limit"
+read n
+s=1
+for ((a=1;$a<=$n;a=$a+1))
+do
+(( s=$s\*$a ))
+done
+echo "Factorial of a given number is $s"
